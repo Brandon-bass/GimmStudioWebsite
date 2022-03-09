@@ -1,17 +1,27 @@
 
-.content{
-  padding:100px;
-}
+
 .header{
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) url("/header.jpg");
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("/header.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 100%;
+  -webkit-background-size: cover;
+  width: 100wh;
   height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:column;
+  text-align: center;
+  color:#fff
+  
 }
 .h1{
   font-size: 50px;
   font-weight: 600;
   margin:0;
+  
 }
