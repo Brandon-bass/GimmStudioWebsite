@@ -23,8 +23,37 @@
   font-size: 50px;
   font-weight: 600;
   margin:0;
+  font-family: sans-serif;
 }
-
+.h2{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 300px;
+  margin-inline-end: 300px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align:center;
+  font-family: sans-serif;
+  
+}
+.h3{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align:left;
+  font-family: sans-serif;
+}
   .mainbody {
     text-align: justify;
     position:absolute;
@@ -32,23 +61,27 @@
     height:100%;
     background-color:rgb(255, 255, 255);
     top:100%;
+    font-family: sans-serif;
     } 
+
     .navbar{
       overflow:hidden;
-      height: 5%;
-      width: 100%;
-      top: 0px;
-      position:  fixed;
       background-color: #f1f1f1;
-      float: left;
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      font-size: 17px;
-      border-bottom: 3px solid transparent;
-      z-index: 9999999999999;
-      
+      position: sticky;
+      top:0;
+      z-index: 100000;
+    }
+
+    .navbar a{
+       float: left;
+       display: block;
+       color: black;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+       border-bottom: 3px solid transparent;
+     
     }
     .navbar a:hover{
       border-bottom: 3px solid black;
@@ -58,14 +91,23 @@
     }
 
     .Contentboxes{
-      display: grid;
-      grid-template-columns:auto auto auto;
-      width: 33.33%;
-      justify-content: center;
+      position: relative;
+      width: 1200px;
+      height: 300px;
+      margin: 50px auto;
+      
     }
     .column{
       background-color: #f4f4f4;
-      padding: 10px;
+      position: relative;
+      width: calc(400px - 30px);
+      height: calc(300px - 30px);
+      float: left;
+      margin: 15px;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 3px;
       border: solid black 1px;
+      
     }
   
