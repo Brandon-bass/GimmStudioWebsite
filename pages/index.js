@@ -32,8 +32,8 @@ export default function Home() {
 
           <div className={styles.oceanWrapper}>
           <div className={styles.ocean}>
-              <div class={styles.wave}></div>
-              <div class={styles.wave}></div>
+              <div className={styles.wave}></div>
+              <div className={styles.wave}></div>
           </div>
           </div>
 
