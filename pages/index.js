@@ -37,7 +37,7 @@ export default function Home() {
           </div>
           </div>
 
-          <div class={styles.bottombar}>
+          <div className={styles.bottombar}>
               &nbsp;
               </div>
           
